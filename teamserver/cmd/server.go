@@ -20,7 +20,7 @@ var CobraServer = &cobra.Command{
 	SilenceUsage: true,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		var (
-			DirPath, _  = "/"
+			DirPath = "/"
 			ServerTimer = time.Now()
 			LogrPath    = "data/loot/" + ServerTimer.Format("2006.01.02._15:04:05")
 			Server      *server.Teamserver
